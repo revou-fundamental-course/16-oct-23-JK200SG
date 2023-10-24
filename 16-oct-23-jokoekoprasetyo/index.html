@@ -3,11 +3,202 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>My Page</title>
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <h1>Hello World!</h1>
+    <header class="header">
+      <div class="nav-logo">
+        <img src="./assets/revou-logo2.png" />
+      </div>
+      <nav class="nav">
+        <a class="nav-item">Home</a>
+        <a class="nav-item">Our Paile</a>
+        <a class="nav-item">Portofolio</a>
+        <a href="#message-us" class="nav-item">Message Us</a>
+      </nav>
+    </header>
+    <section class="banner">
+      <div class="greetings">
+        <h1>Hi Joko, Welcome To Website</h1>
+        <p>Ini adalah website latihan pertama saya</p>
+      </div>
+    </section>
+    <section class="headquarters">
+      <h1>Our Headquarters</h1>
+      <div class="hq-items">
+        <div class="circle"><img src="./assets/jakarta.jpg"></div>
+        <div class="circle">Bandung</div>
+        <div class="circle">Surabaya</div>
+      </div>
+      <div class="circle-items">
+        <h2>Jakarta</h2>
+        <h2>Bandung</h2>
+        <h2>Surabaya</h2>
+      </div>
+    </section>
+    <section id="message-us" class="form">
+      <h1><b>Message Us</b></h1>
+      <div class="form-left">
+        <form method="post" action="">
+          <table>
+            <tr>
+              <td>Nama</td>
+              <td>
+                : <input type="text" name="nama" size="40" placeholder="Nama" />
+              </td>
+            </tr>
+            <tr>
+              <td>Tanggal Lahir</td>
+              <td>
+                :
+                <input
+                  type="date"
+                  name="tglahir"
+                  size="40"
+                  placeholder="isi tanggal"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>Jenis Kelamin</td>
+              <td>
+                :
+                <input
+                  type="radio"
+                  name="jk"
+                  value="laki-laki"
+                  required
+                />Laki-laki<input
+                  type="radio"
+                  name="jk"
+                  value="perempuan"
+                  required
+                />Perempuan
+              </td>
+            </tr>
+            <tr>
+              <td>Pesan</td>
+              <td>:
+                <textarea
+                  type="text"
+                  name="pesan"
+                  size="40"
+                  placeholder="Pesan"
+                  cols="40"
+                  rows="5"
+                  required
+                ></textarea>
+              </td>
+            </tr>
+          </table>
+          <button>Submit</button>
+        </form>
+      </div>
+      <br></section><br>
+      <form method="post" action="">
+        <fieldset>
+          <table>
+            <tr>
+              <td>Nama Lengkap</td>
+              <td>
+                :
+                <input
+                  type="text"
+                  name="nama"
+                  size="40"
+                  placeholder="isi nama lengkap"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>Alamat Sekarang</td>
+              <td>
+                :
+                <input
+                  type="text"
+                  name="alamat"
+                  size="40"
+                  placeholder="isi alamat lengkap"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>Tanggal Lahir</td>
+              <td>
+                :
+                <input
+                  type="date"
+                  name="tgllahir"
+                  size="40"
+                  placeholder="isi tanggal"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>Jenis Kelamin</td>
+              <td>
+                : <input type="radio" name="jk" value="Pria" required />Pria
+                <input type="radio" name="jk" value="wanita" required />Wanita
+              </td>
+            </tr>
+            <tr>
+              <td>Agama</td>
+              <td>
+                :
+                <select name="agama">
+                  <option>Islam</option>
+                  <option>Kristen</option>
+                  <option>Hindu</option>
+                  <option>Budha</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>Asal Sekolah</td>
+              <td>
+                :
+                <input
+                  type="text"
+                  name="asalsekolah"
+                  size="40"
+                  placeholder="isi asal sekolah"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>Email Anda</td>
+              <td>
+                :
+                <input
+                  type="email"
+                  name="email"
+                  size="40"
+                  placeholder="email@apasaja"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>Photo Diri</td>
+              <td>: <input type="file" name="foto" required /></td>
+            </tr>
+            <tr>
+              <td><input type="submit" name="kirim" value="Kirim" /></td>
+            </tr>
+          </table>
+        </fieldset>
+      </form>
+    </section>
+    <section class="footer">
+      <center>
+        <p class="footer-text">made by Joko</p>
+      </center>
+    </section>
     <script src="./js/script.js"></script>
   </body>
 </html>
