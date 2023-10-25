@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Page</title>
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
     <header class="header">
       <div class="nav-logo">
-        <img src="./assets/revou-logo2.png" />
+        <img src="./assets/revou-logo2.png">
       </div>
       <nav class="nav">
         <a class="nav-item">Home</a>
-        <a class="nav-item">Our Paile</a>
+        <a class="nav-item">Our Profile</a>
         <a class="nav-item">Portofolio</a>
         <a href="#message-us" class="nav-item">Message Us</a>
       </nav>
@@ -24,28 +24,45 @@
         <p>Ini adalah website latihan pertama saya</p>
       </div>
     </section>
-    <section class="headquarters">
-      <h1>Our Headquarters</h1>
-      <div class="hq-items">
-        <div class="circle"><img src="./assets/jakarta.jpg"></div>
-        <div class="circle">Bandung</div>
-        <div class="circle">Surabaya</div>
-      </div>
-      <div class="circle-items">
-        <h2>Jakarta</h2>
-        <h2>Bandung</h2>
-        <h2>Surabaya</h2>
-      </div>
+    <!-- Fasilitations Section start -->
+    <section class="fasilitations">
+      <h1>Our Fasilitations</h1>
+      <div class="row">
+        <div class="team-card">
+          <img src="./assets/team-1.jpg" alt="team" class="menu-card-assets">
+          <h2 class="team-card-title">Ryan Wilson</h2>
+          <p class="tag-card">Senior Developer</p>
+        </div>
+        <div class="team-card">
+          <img src="./assets/team-2.jpg" alt="team" class="menu-card-assets">
+          <h2 class="team-card-title">Anna Peterson</h2>
+          <p class="tag-card">UI Designer</p>
+        </div>
+        <div class="team-card">
+          <img src="./assets/team-3.jpg" alt="team" class="menu-card-assets">
+          <h2 class="team-card-title">Avril Lavigne</h2>
+          <p class="tag-card">Sofware Developer</p>
+        </div>
     </section>
-    <section id="message-us" class="form">
-      <h1><b>Message Us</b></h1>
-      <div class="form-left">
-        <form method="post" action="">
+    <!-- Fasilitations Section End -->
+
+    <!-- Message Section Start -->
+    <section id="message-us" class="message-us">
+      <h1>
+        <b>Message Us</b>
+      </h1>
+      <div id="container">
+        <div class="row-1">
           <table>
             <tr>
               <td>Nama</td>
               <td>
-                : <input type="text" name="nama" size="40" placeholder="Nama" />
+                :
+                <input
+                  type="text"
+                  name="nama"
+                  size="40"
+                  placeholder="Nama">
               </td>
             </tr>
             <tr>
@@ -57,8 +74,7 @@
                   name="tglahir"
                   size="40"
                   placeholder="isi tanggal"
-                  required
-                />
+                  required>
               </td>
             </tr>
             <tr>
@@ -69,18 +85,19 @@
                   type="radio"
                   name="jk"
                   value="laki-laki"
-                  required
-                />Laki-laki<input
+                  required>Laki-laki
+                <input
                   type="radio"
                   name="jk"
                   value="perempuan"
-                  required
-                />Perempuan
+                  required>
+                Perempuan
               </td>
             </tr>
             <tr>
               <td>Pesan</td>
-              <td>:
+              <td>
+                :
                 <textarea
                   type="text"
                   name="pesan"
@@ -88,42 +105,24 @@
                   placeholder="Pesan"
                   cols="40"
                   rows="5"
-                  required
-                ></textarea>
+                  required></textarea>
               </td>
             </tr>
           </table>
           <button>Submit</button>
-        </form>
-      </div>
-      <br></section><br>
-      <form method="post" action="">
-        <fieldset>
+        </div>
+        <div class="row-2">
           <table>
             <tr>
-              <td>Nama Lengkap</td>
-              <td>
-                :
-                <input
-                  type="text"
-                  name="nama"
-                  size="40"
-                  placeholder="isi nama lengkap"
-                  required
-                />
+              <td>Current time</td>
+              <td <input type="datetime" id="mydatetime"><p id="datetime"></p>
               </td>
             </tr>
             <tr>
-              <td>Alamat Sekarang</td>
-              <td>
-                :
-                <input
-                  type="text"
-                  name="alamat"
-                  size="40"
-                  placeholder="isi alamat lengkap"
-                  required
-                />
+              <td>Nama</td>
+              <td>: <input type="text" name="nama" size="40" cols="40" rows="10" placeholder="Nama">
+                
+                
               </td>
             </tr>
             <tr>
@@ -131,74 +130,57 @@
               <td>
                 :
                 <input
-                  type="date"
-                  name="tgllahir"
-                  size="40"
+                type="date"
+                name="tglahir"
+                size="40"
                   placeholder="isi tanggal"
-                  required
-                />
+                  required>
               </td>
             </tr>
             <tr>
               <td>Jenis Kelamin</td>
               <td>
-                : <input type="radio" name="jk" value="Pria" required />Pria
-                <input type="radio" name="jk" value="wanita" required />Wanita
-              </td>
-            </tr>
-            <tr>
-              <td>Agama</td>
-              <td>
-                :
-                <select name="agama">
-                  <option>Islam</option>
-                  <option>Kristen</option>
-                  <option>Hindu</option>
-                  <option>Budha</option>
-                </select>
-              </td>
-            </tr>
-            <tr>
-              <td>Asal Sekolah</td>
-              <td>
                 :
                 <input
+                  name="jk"
+                  value="Laki-laki"
+                  size="40"
+                  cols="40"
+                  rows="1.5"
+                  required>
+              </td>
+            </tr>
+            <tr>
+              <td>Pesan</td>
+              <td>
+                :
+                <textarea
                   type="text"
-                  name="asalsekolah"
+                  name="pesan"
                   size="40"
-                  placeholder="isi asal sekolah"
-                />
+                  placeholder="Pesan"
+                  cols="40"
+                  rows="1.5"
+                  required>Lagi Belajar Buat Website</textarea>
               </td>
-            </tr>
-            <tr>
-              <td>Email Anda</td>
-              <td>
-                :
-                <input
-                  type="email"
-                  name="email"
-                  size="40"
-                  placeholder="email@apasaja"
-                  required
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>Photo Diri</td>
-              <td>: <input type="file" name="foto" required /></td>
-            </tr>
-            <tr>
-              <td><input type="submit" name="kirim" value="Kirim" /></td>
             </tr>
           </table>
-        </fieldset>
-      </form>
-    </section>
-    <section class="footer">
-      <center>
-        <p class="footer-text">made by Joko</p>
-      </center>
-    </section>
-    <script src="./js/script.js"></script>
+        </div>
+      </div>
+      <!-- Message Section End -->
+      
+      <!-- Footer Start -->
+      <section class="footer">
+        <center>
+          <div class="credit">
+            <p>Created by
+              <a href>Joko Eko Prasetyo</a>. | &copy; 2023.
+            </p>
+          </div>
+        </center>
+      </section>
+      <!-- Footer End -->
+      <!-- My Javascript -->
+      <script src="./js/script.js"></script>
   </body>
 </html>
