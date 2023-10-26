@@ -1,6 +1,15 @@
-// Get current date and time
-var date = new Date();
-var p = document.getElementById("datetime");
-// Insert date and time into HTML
-p.innerHTML = date;
+// Toggle class active
+const navbarNav = document.querySelector(".navbar-nav");
+// ketika hmburger menu di klik
+document.querySelector("#hamburger-menu").onclick = () => {
+  navbarNav.classList.toggle("active");
+};
 
+//  Klik di luar sidebar untuk menghilangkan nav
+const hamburger = document.querySelector("#hamburger-menu");
+
+document.addEventListener("click", function (e) {
+  if (!hamburger.contains(e.target) && !navbarNav.contains(e.target)) {
+    navbarNav.classList.remove("active");
+  }
+});

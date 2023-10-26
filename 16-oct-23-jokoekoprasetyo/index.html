@@ -1,55 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Page</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Coding Project</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="nav-logo">
-        <img src="./assets/revou-logo2.png">
-      </div>
-      <nav class="nav">
-        <a class="nav-item">Home</a>
-        <a class="nav-item">Our Profile</a>
-        <a class="nav-item">Portofolio</a>
-        <a href="#message-us" class="nav-item">Message Us</a>
-      </nav>
-    </header>
-    <section class="banner">
-      <div class="greetings">
-        <h1>Hi Joko, Welcome To Website</h1>
-        <p>Ini adalah website latihan pertama saya</p>
-      </div>
-    </section>
-    <!-- Fasilitations Section start -->
-    <section class="fasilitations">
-      <h1>Our Fasilitations</h1>
-      <div class="row">
-        <div class="team-card">
-          <img src="./assets/team-1.jpg" alt="team" class="menu-card-assets">
-          <h2 class="team-card-title">Ryan Wilson</h2>
-          <p class="tag-card">Senior Developer</p>
-        </div>
-        <div class="team-card">
-          <img src="./assets/team-2.jpg" alt="team" class="menu-card-assets">
-          <h2 class="team-card-title">Anna Peterson</h2>
-          <p class="tag-card">UI Designer</p>
-        </div>
-        <div class="team-card">
-          <img src="./assets/team-3.jpg" alt="team" class="menu-card-assets">
-          <h2 class="team-card-title">Avril Lavigne</h2>
-          <p class="tag-card">Sofware Developer</p>
-        </div>
-    </section>
-    <!-- Fasilitations Section End -->
+    <!-- Navbar Start -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo"
+        ><img src="./img/logo-bg.png" alt="logo" />
+        <h8>Revo <span>U</span></h8></a
+      >
 
-    <!-- Message Section Start -->
-    <section id="message-us" class="message-us">
-      <h1>
-        <b>Message Us</b>
+      <div class="navbar-nav">
+        <a href="#home">Home</a>
+        <a href="#about">Our Profile</a>
+        <a href="#menu">Portofolio</a>
+        <a href="#message-us">Message Us</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+
+    <!-- Navbar End -->
+
+    <!-- Hero Section Start -->
+    <section class="hero" id="home">
+      <main class="content">
+        <h1>Hi, I'm Joko Eko <span>Prasetyo</span></h1>
+        <p>Ini Adalah Website Latihan Pertama Saya</p>
+      </main>
+    </section>
+    <!-- Hero Section end -->
+
+    <!-- About Section start -->
+    <section id="about" class="about">
+      <h2><span>Our </span>Profile</h2>
+
+      <div class="row">
+        <div class="about-img">
+          <img src="img/about-me.jpg" alt="about Us" />
+        </div>
+        <div class="content">
+          <h3>Hallo, nice to meet you, may i introduce my self ...</h3>
+          <p>
+            I'm interested to learn Web Developer, specialy Software Engineer,
+            Frontend Developer and Fullstack Developer .
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Perspiciatis, repellat.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Menu Section Start -->
+    <section id="menu" class="menu">
+      <h2><span>Porto </span>folio</h2>
+      <p>
+        Berikut adalah pengajar - pengajar saya dalam mempelajari Pemrograman.
+      </p>
+
+      <div class="row">
+        <div class="menu-card">
+          <img src="img/team/team-1.jpg" alt="Espresso" class="menu-card-img" />
+          <h3 class="menu-card-title">- Jane Doe -</h3>
+          <p class="menu-card-price">Software Engineer</p>
+        </div>
+        <div class="menu-card">
+          <img src="img/team/team-2.jpg" alt="Espresso" class="menu-card-img" />
+          <h3 class="menu-card-title">- Anne Lame -</h3>
+          <p class="menu-card-price">Frontend Developer</p>
+        </div>
+        <div class="menu-card">
+          <img src="img/team/team-3.jpg" alt="Espresso" class="menu-card-img" />
+          <h3 class="menu-card-title">- Rissa Shane -</h3>
+          <p class="menu-card-price">UI UX Designer</p>
+        </div>
+        <div class="menu-card">
+          <img src="img/team/team-4.jpg" alt="Espresso" class="menu-card-img" />
+          <h3 class="menu-card-title">- Jason Derullo -</h3>
+          <p class="menu-card-price">Project Engineer</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Section End -->
+
+    
+
+    <!-- Contact Section Start -->
+    <section id="contact" class="contact">
+      <h2><span>Message </span>Us</h2>
+      <p>
+        Kirimkan pesan kepada kami, agar kami dapat berkembang lebih baik lagi.
+      </p>
+
+      <div class="row">
       </h1>
       <div id="container">
         <div class="row-1">
@@ -168,19 +234,54 @@
         </div>
       </div>
       <!-- Message Section End -->
-      
-      <!-- Footer Start -->
-      <section class="footer">
-        <center>
-          <div class="credit">
-            <p>Created by
-              <a href>Joko Eko Prasetyo</a>. | &copy; 2023.
-            </p>
+
+        <form action="">
+          <div class="input-group">
+            <i data-feather="user"></i>
+            <input type="text" placeholder="name" />
           </div>
-        </center>
-      </section>
-      <!-- Footer End -->
-      <!-- My Javascript -->
-      <script src="./js/script.js"></script>
+          <div class="input-group">
+            <i data-feather="mail"></i>
+            <input type="text" placeholder="email" />
+          </div>
+          <div class="input-group">
+            <i data-feather="phone"></i>
+            <input type="text" placeholder="no.phone" />
+          </div>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+    <!-- Contact Section End-->
+
+    <!-- Footer Start -->
+    <footer>
+      <div class="socials">
+        <a href="#"><i data-feather="instagram"></i></a>
+        <a href="#"><i data-feather="twitter"></i></a>
+        <a href="#"><i data-feather="facebook"></i></a>
+      </div>
+
+      <div class="links">
+        <a href="#home">Home</a>
+        <a href="#about">Our Profile</a>
+        <a href="#menu">Portofolio</a>
+        <a href="#message-us">Message Us</a>
+      </div>
+
+      <div class="credit">
+        <p>Created by <a href="">Joko Eko Prasetyo</a>. | &copy; 2023.</p>
+      </div>
+    </footer>
+
+    <!-- Footer End -->
+
+    <!-- Feather Icons -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- My Javascript -->
+    <script src="js/script.js"></script>
   </body>
 </html>
