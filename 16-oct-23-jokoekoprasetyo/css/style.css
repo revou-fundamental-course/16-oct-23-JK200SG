@@ -99,7 +99,7 @@ body {
 
 /* Message Section */
 .message-us {
-    background-color: rgb(132, 160, 160);
+  background-color: rgb(132, 160, 160);
 }
 .message-us .row {
   display: flex;
@@ -145,11 +145,24 @@ button:focus {
 /* Media Query */
 
 /* Laptop */
-
+@media screen and (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
 /* Tablet */
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+}
 
 /* Mobile Phone */
-
+@media screen (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+}
 
 .footer a {
   font-family: "poppins", sans-serif;
